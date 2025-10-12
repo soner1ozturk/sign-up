@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('Norse-Bold.otf') format('opentype');
+}
+
 body{
     display: flex;
     flex-direction: row;
@@ -13,8 +18,42 @@ body{
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
     
 
+}
+
+.odinLogoContainer{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.odinLogo{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-image: url('odin-logo.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.odinText{
+    font-family: 'Norse Bold', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .contentContainer{
