@@ -59,7 +59,113 @@ body{
 .contentContainer{
 
     display: flex;
+    flex-direction: column;
     height: 100vh;
     flex: 1;
     border: 2px solid blue;
+    background-color: rgb(236, 236, 236);
+
 }
+
+.headingContainer{
+    display: flex;
+    flex: 1;
+    border: solid 1px salmon;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+.formContainer{
+    display: flex;
+    flex: 1;
+    border: solid 1px green;
+    background-color: white;
+}
+
+.buttonContainer{
+    display: flex;
+    flex: 1;
+    border: solid 1px purple;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.createButton{
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.createButton:hover{
+    background-color: #45a049;
+}
+
+.createButton:active{
+    background-color: #3e8e41;
+}
+
+.formElement{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.formRow{
+    display: flex;
+    gap: 15px;
+}
+
+.fieldGroup{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.formInput{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* HTML5 validation styling */
+.formInput:valid {
+    border-color: green;
+    border-width: 2px;
+}
+
+.formInput:invalid {
+    border-color: red;
+    border-width: 2px;
+}
+
+/* Only show validation colors after user interacts */
+.formInput:not(:placeholder-shown):valid {
+    border-color: green;
+    border-width: 2px;
+}
+
+.formInput:not(:placeholder-shown):invalid {
+    border-color: red;
+    border-width: 2px;
+}
+
+.formLabel{
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+
